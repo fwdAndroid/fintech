@@ -1,0 +1,20 @@
+import '../../theme/fintech_util.dart';
+import 'package:flutter/material.dart';
+
+class RecipientsModel extends FintechModel {
+  ///  State fields for stateful widgets in this page.
+
+  // State field(s) for TextField widget.
+  TextEditingController? textController;
+  String? Function(BuildContext, String?)? textControllerValidator;
+
+  /// Initialization and disposal methods.
+
+  void initState(BuildContext context) {}
+
+  void dispose() {
+    textController?.dispose();
+  }
+
+  /// Additional helper methods are added here.
+}
